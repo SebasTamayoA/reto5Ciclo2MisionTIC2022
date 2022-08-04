@@ -1,4 +1,13 @@
 package com.mycompany.view;
 
-public class ReportesView {
+import javax.swing.*;
+
+public class ReportesView extends JFrame {
+    private JPanel panel1;
+
+    public ReportesView() {
+        setContentPane(panel1);
+    }
+
+
 }
