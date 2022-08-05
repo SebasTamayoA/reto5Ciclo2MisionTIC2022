@@ -3,13 +3,12 @@ package com.mycompany.model.dao;
 import com.mycompany.model.util.JDBCUtilities;
 import com.mycompany.model.vo.InfoLiderVo;
 
+import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.List;
 
 public class InfoLiderDao {
 
@@ -66,6 +65,7 @@ public class InfoLiderDao {
             }
             return resultado;
         } catch (SQLException e) {
+            JOptionPane.showMessageDialog(null, "Error al listar");
             e.printStackTrace();
             return null;
         }

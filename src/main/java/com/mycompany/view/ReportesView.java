@@ -28,8 +28,8 @@ public class ReportesView extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 try {
-                    // ocultar jLabel lblTitulo
-                    lblTitulo.setVisible(false);
+                    // limpiar el Jpanel
+                    panel1.removeAll();
                     // mostrar el informe 1 en el jTable tblResultados y agregar un scrollPanel al jFrame
                     DefaultTableModel model = reportesController.listarInfoLider();
                     tblResultados.setModel(model);
@@ -43,6 +43,10 @@ public class ReportesView extends JFrame {
                     panel2.add(btnInforme3);
                     panel2.add(btnSalir);
                     panel1.add(panel2, BorderLayout.SOUTH);
+                    // agregar nuevo label en la parte superior y centrarlo
+                    JLabel lblTitulo2 = new JLabel(" Información respectiva al “Líder”.");
+                    panel1.add(lblTitulo2, BorderLayout.NORTH);
+                    lblTitulo2.setHorizontalAlignment(JLabel.CENTER);
                     pack(); // ajustar el tamaño del jFrame a los componentes que contiene
 
                 } catch (SQLException ex) {
@@ -54,8 +58,8 @@ public class ReportesView extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 try {
-                    // ocultar jLabel lblTitulo
-                    lblTitulo.setVisible(false);
+                    // limpiar el Jpanel
+                    panel1.removeAll();
                     // mostrar el informe 2 en el jTable tblResultados y agregar un scrollPanel al jFrame
                     DefaultTableModel model = reportesController.listarInfoProyecto();
                     tblResultados.setModel(model);
@@ -69,6 +73,12 @@ public class ReportesView extends JFrame {
                     panel2.add(btnInforme3);
                     panel2.add(btnSalir);
                     panel1.add(panel2, BorderLayout.SOUTH);
+                    // agregar nuevo label en la parte superior y centrarlo
+                    JLabel lblTitulo2 = new JLabel("información de los proyectos cuya clasificación sea \n" +
+                            "“Casa Campestre” y que estén ubicados en las ciudades de “Santa Marta”, “Cartagena” y\n" +
+                            "“Barranquilla”");
+                    panel1.add(lblTitulo2, BorderLayout.NORTH);
+                    lblTitulo2.setHorizontalAlignment(JLabel.CENTER);
                     pack(); // ajustar el tamaño del jFrame a los componentes que contiene
 
                 } catch (SQLException ex) {
@@ -80,8 +90,8 @@ public class ReportesView extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 try {
-                    // ocultar jLabel lblTitulo
-                    lblTitulo.setVisible(false);
+                    // limpiar el Jpanel
+                    panel1.removeAll();
                     // mostrar el informe 3 en el jTable tblResultados y agregar un scrollPanel al jFrame
                     DefaultTableModel model = reportesController.listarComprasProyecto();
                     tblResultados.setModel(model);
@@ -95,6 +105,12 @@ public class ReportesView extends JFrame {
                     panel2.add(btnInforme3);
                     panel2.add(btnSalir);
                     panel1.add(panel2, BorderLayout.SOUTH);
+                    // agregar nuevo label en la parte superior y centrarlo
+                    JLabel lblTitulo2 = new JLabel(" compras realizadas por los proyectos con el proveedor “Homecenter” y para la ciudad “Salento”");
+                    panel1.add(lblTitulo2, BorderLayout.NORTH);
+                    lblTitulo2.setHorizontalAlignment(JLabel.CENTER);
+                    // agregar margenes al label
+                    lblTitulo2.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
                     pack(); // ajustar el tamaño del jFrame a los componentes que contiene
 
                 } catch (SQLException ex) {

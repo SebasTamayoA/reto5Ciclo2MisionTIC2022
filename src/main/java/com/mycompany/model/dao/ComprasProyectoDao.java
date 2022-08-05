@@ -3,6 +3,7 @@ package com.mycompany.model.dao;
 import com.mycompany.model.util.JDBCUtilities;
 import com.mycompany.model.vo.ComprasProyectoVo;
 
+import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -64,6 +65,7 @@ public class ComprasProyectoDao {
             }
             return resultado;
         } catch (SQLException e) {
+            JOptionPane.showMessageDialog(null, "Error al listar");
             e.printStackTrace();
             return null;
         }

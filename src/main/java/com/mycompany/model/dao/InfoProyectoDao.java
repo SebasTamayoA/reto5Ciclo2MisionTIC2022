@@ -2,6 +2,7 @@ package com.mycompany.model.dao;
 
 import com.mycompany.model.util.JDBCUtilities;
 
+import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -15,8 +16,9 @@ public class InfoProyectoDao {
     “Casa Campestre” y que estén ubicados en las ciudades de “Santa Marta”, “Cartagena” y
     “Barranquilla”. Este informe debe contener: el ID_Proyecto, la Constructora, el
     Nùmero_Habitaciones y la respectiva Ciudad.*/
+
         String sql = "SELECT Proyecto.ID_Proyecto, Proyecto.Constructora,"
-                + "Proyecto.Numero_Habitaciones, Proyecto.Ciudad FROM Proyecto"
+                + " Proyecto.Numero_Habitaciones, Proyecto.Ciudad FROM Proyecto"
                 + " WHERE Proyecto.Clasificacion = 'Casa Campestre' AND Proyecto.Ciudad IN ('Santa Marta', 'Cartagena', 'Barranquilla')";
         try {
             Connection connection = JDBCUtilities.getConnection();
@@ -38,6 +40,7 @@ public class InfoProyectoDao {
             }
             return resultado;
         } catch (SQLException e) {
+            JOptionPane.showMessageDialog(null, "Error al listar");
             e.printStackTrace();
             return null;
         }

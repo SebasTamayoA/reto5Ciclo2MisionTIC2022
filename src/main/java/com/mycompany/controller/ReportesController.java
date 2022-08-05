@@ -3,13 +3,9 @@ package com.mycompany.controller;
 import com.mycompany.model.dao.ComprasProyectoDao;
 import com.mycompany.model.dao.InfoLiderDao;
 import com.mycompany.model.dao.InfoProyectoDao;
-import com.mycompany.model.vo.ComprasProyectoVo;
-import com.mycompany.model.vo.InfoLiderVo;
-import com.mycompany.model.vo.InfoProyectoVo;
 
 import javax.swing.table.DefaultTableModel;
 import java.sql.SQLException;
-import java.util.List;
 
 public class ReportesController {
     private InfoLiderDao infoLiderDao;
@@ -29,7 +25,7 @@ public class ReportesController {
 
     // Informe 2: Listado de Proyectos
     public DefaultTableModel listarInfoProyecto() throws SQLException{
-        return null;
+        return infoProyectoDao.listar();
     }
 
     // Informe 3: Listado de Compras por Proyecto
