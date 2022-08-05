@@ -12,11 +12,9 @@ public class App {
             public void run() {
                 JFrame frame = new ReportesView();
                 frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-                frame.setVisible(true);
-                // dar tamaño a el jFrame
-                frame.setSize(800, 600);
-                //centrar el jFrame
+                frame.setSize(850, 300);
                 frame.setLocationRelativeTo(null);
+                frame.setVisible(true);
             }
         });
 

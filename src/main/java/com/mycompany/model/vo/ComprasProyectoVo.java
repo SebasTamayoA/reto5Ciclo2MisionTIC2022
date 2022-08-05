@@ -1,16 +1,16 @@
 package com.mycompany.model.vo;
 
 public class ComprasProyectoVo {
-    private int id;
+    private int idProyecto;
     private String constructora;
     private String bancoVinculado;
 
-    public int getId() {
-        return id;
+    public int getIdProyecto() {
+        return idProyecto;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setIdProyecto(int idProyecto) {
+        this.idProyecto = idProyecto;
     }
 
     public String getConstructora() {

@@ -1,17 +1,17 @@
 package com.mycompany.model.vo;
 
 public class InfoLiderVo {
-    private int id;
+    private int idLider;
     private String nombre;
     private String primerApellido;
     private String ciudadResidencia;
 
-    public int getId() {
-        return id;
+    public int getIdLider() {
+        return idLider;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setIdLider(int idLider) {
+        this.idLider = idLider;
     }
 
     public String getNombre() {
