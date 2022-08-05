@@ -11,7 +11,7 @@ public class App {
             @Override
             public void run() {
                 JFrame frame = new ReportesView();
-                frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                frame.setDefaultCloseOperation(frame.EXIT_ON_CLOSE);
                 frame.setSize(850, 300);
                 frame.setLocationRelativeTo(null);
                 frame.setVisible(true);

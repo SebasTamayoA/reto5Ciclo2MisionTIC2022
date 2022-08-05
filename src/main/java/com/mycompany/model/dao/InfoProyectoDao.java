@@ -19,7 +19,8 @@ public class InfoProyectoDao {
 
         String sql = "SELECT Proyecto.ID_Proyecto, Proyecto.Constructora,"
                 + " Proyecto.Numero_Habitaciones, Proyecto.Ciudad FROM Proyecto"
-                + " WHERE Proyecto.Clasificacion = 'Casa Campestre' AND Proyecto.Ciudad IN ('Santa Marta', 'Cartagena', 'Barranquilla')";
+                + " WHERE Proyecto.Clasificacion = 'Casa Campestre' AND Proyecto.Ciudad IN ('Santa Marta', 'Cartagena', 'Barranquilla')"
+                + " ORDER BY Proyecto.Ciudad";
         try {
             Connection connection = JDBCUtilities.getConnection();
             assert connection != null;

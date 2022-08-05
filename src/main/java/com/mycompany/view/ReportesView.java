@@ -46,7 +46,9 @@ public class ReportesView extends JFrame {
                     // agregar nuevo label en la parte superior y centrarlo
                     JLabel lblTitulo2 = new JLabel(" Información respectiva al “Líder”.");
                     panel1.add(lblTitulo2, BorderLayout.NORTH);
-                    lblTitulo2.setHorizontalAlignment(JLabel.CENTER);
+                    lblTitulo2.setHorizontalAlignment(lblTitulo2.CENTER);
+                    // agregar margenes al label
+                    lblTitulo2.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
                     pack(); // ajustar el tamaño del jFrame a los componentes que contiene
 
                 } catch (SQLException ex) {
@@ -78,7 +80,9 @@ public class ReportesView extends JFrame {
                             "“Casa Campestre” y que estén ubicados en las ciudades de “Santa Marta”, “Cartagena” y\n" +
                             "“Barranquilla”");
                     panel1.add(lblTitulo2, BorderLayout.NORTH);
-                    lblTitulo2.setHorizontalAlignment(JLabel.CENTER);
+                    lblTitulo2.setHorizontalAlignment(lblTitulo2.CENTER);
+                    // agregar margenes al label
+                    lblTitulo2.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
                     pack(); // ajustar el tamaño del jFrame a los componentes que contiene
 
                 } catch (SQLException ex) {
@@ -108,7 +112,7 @@ public class ReportesView extends JFrame {
                     // agregar nuevo label en la parte superior y centrarlo
                     JLabel lblTitulo2 = new JLabel(" compras realizadas por los proyectos con el proveedor “Homecenter” y para la ciudad “Salento”");
                     panel1.add(lblTitulo2, BorderLayout.NORTH);
-                    lblTitulo2.setHorizontalAlignment(JLabel.CENTER);
+                    lblTitulo2.setHorizontalAlignment(lblTitulo2.CENTER);
                     // agregar margenes al label
                     lblTitulo2.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
                     pack(); // ajustar el tamaño del jFrame a los componentes que contiene

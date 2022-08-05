@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="35245117-d651-4294-8c7f-b49b884e5ea7" name="Changes" comment="Actualizacion formulario con informe 3">
+    <list default="true" id="35245117-d651-4294-8c7f-b49b884e5ea7" name="Changes" comment="Actualizacion formulario con informe 2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/controller/ReportesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/controller/ReportesController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/model/dao/ComprasProyectoDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/model/dao/ComprasProyectoDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/model/dao/InfoLiderDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/model/dao/InfoLiderDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/model/dao/InfoProyectoDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/model/dao/InfoProyectoDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/view/ReportesView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/view/ReportesView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,7 +50,7 @@
   }
 }</component>
   <component name="RunManager" selected="Application.App">
-    <configuration name="App (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="App (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.mycompany.App" />
       <module name="reto5" />
       <extension name="coverage">
@@ -121,10 +118,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.App" />
+        <item itemvalue="Application.App (1)" />
         <item itemvalue="Application.App (5)" />
         <item itemvalue="Application.App (4)" />
         <item itemvalue="Application.App (3)" />
-        <item itemvalue="Application.App (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -138,7 +135,7 @@
       <updated>1659632373063</updated>
       <workItem from="1659632374335" duration="10503000" />
       <workItem from="1659644181820" duration="2188000" />
-      <workItem from="1659652698313" duration="15626000" />
+      <workItem from="1659652698313" duration="16463000" />
     </task>
     <task id="LOCAL-00001" summary="PlantillaDeinicio">
       <created>1659634797448</created>
@@ -175,7 +172,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659666368138</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Actualizacion formulario con informe 2">
+      <created>1659669598606</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1659669598606</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,6 +205,7 @@
     <MESSAGE value="Actualizacion clases DAO y formulario con informe" />
     <MESSAGE value="Actualizacion clases DAO y formulario con informe 1" />
     <MESSAGE value="Actualizacion formulario con informe 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Actualizacion formulario con informe 3" />
+    <MESSAGE value="Actualizacion formulario con informe 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Actualizacion formulario con informe 2" />
   </component>
 </project>
