@@ -24,7 +24,6 @@ public class ReportesView extends JFrame {
         this.reportesController = new ReportesController();
         setContentPane(panel1);
 
-
         btnInforme1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -49,7 +48,65 @@ public class ReportesView extends JFrame {
                 } catch (SQLException ex) {
                     JOptionPane.showMessageDialog(null, "Error al listar los líderes");
                 }
+            }
+        });
+        btnInforme2.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                try {
+                    // ocultar jLabel lblTitulo
+                    lblTitulo.setVisible(false);
+                    // mostrar el informe 2 en el jTable tblResultados y agregar un scrollPanel al jFrame
+                    DefaultTableModel model = reportesController.listarInfoProyecto();
+                    tblResultados.setModel(model);
+                    JScrollPane scrollPane = new JScrollPane(tblResultados);
+                    panel1.setLayout(new BorderLayout());
+                    panel1.add(scrollPane, BorderLayout.CENTER);
+                    // poner botones al final del jFrame para volver a la ventana principal y salir
+                    JPanel panel2 = new JPanel();
+                    panel2.add(btnInforme1);
+                    panel2.add(btnInforme2);
+                    panel2.add(btnInforme3);
+                    panel2.add(btnSalir);
+                    panel1.add(panel2, BorderLayout.SOUTH);
+                    pack(); // ajustar el tamaño del jFrame a los componentes que contiene
 
+                } catch (SQLException ex) {
+                    JOptionPane.showMessageDialog(null, "Error al listar los proyectos");
+                }
+            }
+        });
+        btnInforme3.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                try {
+                    // ocultar jLabel lblTitulo
+                    lblTitulo.setVisible(false);
+                    // mostrar el informe 3 en el jTable tblResultados y agregar un scrollPanel al jFrame
+                    DefaultTableModel model = reportesController.listarComprasProyecto();
+                    tblResultados.setModel(model);
+                    JScrollPane scrollPane = new JScrollPane(tblResultados);
+                    panel1.setLayout(new BorderLayout());
+                    panel1.add(scrollPane, BorderLayout.CENTER);
+                    // poner botones al final del jFrame para volver a la ventana principal y salir
+                    JPanel panel2 = new JPanel();
+                    panel2.add(btnInforme1);
+                    panel2.add(btnInforme2);
+                    panel2.add(btnInforme3);
+                    panel2.add(btnSalir);
+                    panel1.add(panel2, BorderLayout.SOUTH);
+                    pack(); // ajustar el tamaño del jFrame a los componentes que contiene
+
+                } catch (SQLException ex) {
+                    JOptionPane.showMessageDialog(null, "Error al listar las compras");
+                }
+            }
+        });
+        btnSalir.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                // salir de la ventana
+                dispose();
             }
         });
     }

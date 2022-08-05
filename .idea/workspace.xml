@@ -4,16 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="35245117-d651-4294-8c7f-b49b884e5ea7" name="Changes" comment="ActualizacionInformacionVO">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/controller/ReportesController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+    <list default="true" id="35245117-d651-4294-8c7f-b49b884e5ea7" name="Changes" comment="Actualizacion clases DAO y formulario con informe 1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/model/dao/ComprasProyectoDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/model/dao/ComprasProyectoDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/model/dao/InfoLiderDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/model/dao/InfoLiderDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/model/vo/ComprasProyectoVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/model/vo/ComprasProyectoVo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/model/vo/InfoLiderVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/model/vo/InfoLiderVo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/view/ReportesView.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/view/ReportesView.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/model/dao/InfoProyectoDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/model/dao/InfoProyectoDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/view/ReportesView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/view/ReportesView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -142,7 +137,7 @@
       <updated>1659632373063</updated>
       <workItem from="1659632374335" duration="10503000" />
       <workItem from="1659644181820" duration="2188000" />
-      <workItem from="1659652698313" duration="10682000" />
+      <workItem from="1659652698313" duration="12466000" />
     </task>
     <task id="LOCAL-00001" summary="PlantillaDeinicio">
       <created>1659634797448</created>
@@ -165,7 +160,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659636750866</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Actualizacion clases DAO y formulario con informe 1">
+      <created>1659664860461</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1659664860461</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -188,6 +190,8 @@
     <MESSAGE value="PlantillaDeinicio" />
     <MESSAGE value="GeneracionInformacionVO" />
     <MESSAGE value="ActualizacionInformacionVO" />
-    <option name="LAST_COMMIT_MESSAGE" value="ActualizacionInformacionVO" />
+    <MESSAGE value="Actualizacion clases DAO y formulario con informe" />
+    <MESSAGE value="Actualizacion clases DAO y formulario con informe 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Actualizacion clases DAO y formulario con informe 1" />
   </component>
 </project>

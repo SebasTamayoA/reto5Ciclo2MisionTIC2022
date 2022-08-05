@@ -43,7 +43,7 @@ public class ComprasProyectoDao {
         /*Realizar un informe basándose en las compras realizadas por los proyectos con el proveedor
         “Homecenter” y para la ciudad “Salento”. Este informe debe incluir: ID_Compra,
          Constructora y Banco_Vinculado*/
-        String sql = "SELECT Compra.ID_Compra AS ID, Proyecto.Constructora AS CONSTRUCTORA, Proyecto.Banco_Vinculado AS BANCO FROM Compra"
+        String sql = "SELECT Compra.ID_Compra, Proyecto.Constructora, Proyecto.Banco_Vinculado FROM Compra"
                 + " INNER JOIN Proyecto ON Compra.ID_Proyecto = Proyecto.ID_Proyecto"
                 + " WHERE Compra.Proveedor = 'Homecenter' AND Proyecto.Ciudad = 'Salento'";
         try {
@@ -51,18 +51,18 @@ public class ComprasProyectoDao {
             assert connection != null;
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
             ResultSet resultSet = preparedStatement.executeQuery();
-            DefaultTableModel defaultTableModel = new DefaultTableModel();
-            defaultTableModel.addColumn("ID");
-            defaultTableModel.addColumn("CONSTRUCTORA");
-            defaultTableModel.addColumn("BANCO");
+            DefaultTableModel resultado = new DefaultTableModel();
+            resultado.addColumn("ID_Compra");
+            resultado.addColumn("Constructora");
+            resultado.addColumn("Banco_Vinculado");
             while (resultSet.next()) {
-                defaultTableModel.addRow(new Object[]{
-                        resultSet.getInt("ID"),
-                        resultSet.getString("CONSTRUCTORA"),
-                        resultSet.getString("BANCO")
+                resultado.addRow(new Object[]{
+                        resultSet.getInt("ID_Compra"),
+                        resultSet.getString("Constructora"),
+                        resultSet.getString("Banco_Vinculado")
                 });
             }
-            return defaultTableModel;
+            return resultado;
         } catch (SQLException e) {
             e.printStackTrace();
             return null;

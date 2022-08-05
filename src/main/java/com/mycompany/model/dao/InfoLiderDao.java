@@ -51,20 +51,20 @@ public class InfoLiderDao {
             assert connection != null;
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
             ResultSet resultSet = preparedStatement.executeQuery();
-            DefaultTableModel modelo = new DefaultTableModel();
-            modelo.addColumn("ID_Lider", new Object[]{"ID_Lider"});
-            modelo.addColumn("Nombre", new Object[]{"Nombre"});
-            modelo.addColumn("Primer_Apellido", new Object[]{"Primer_Apellido"});
-            modelo.addColumn("Ciudad_Residencia", new Object[]{"Ciudad_Residencia"});
+            DefaultTableModel resultado = new DefaultTableModel();
+            resultado.addColumn("ID_Lider");
+            resultado.addColumn("Nombre");
+            resultado.addColumn("Primer_Apellido");
+            resultado.addColumn("Ciudad_Residencia");
             while (resultSet.next()) {
                 Object[] fila = new Object[4];
                 fila[0] = resultSet.getInt("ID_Lider");
                 fila[1] = resultSet.getString("Nombre");
                 fila[2] = resultSet.getString("Primer_Apellido");
                 fila[3] = resultSet.getString("Ciudad_Residencia");
-                modelo.addRow(fila);
+                resultado.addRow(fila);
             }
-            return modelo;
+            return resultado;
         } catch (SQLException e) {
             e.printStackTrace();
             return null;
