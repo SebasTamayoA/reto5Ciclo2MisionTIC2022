@@ -1,17 +1,17 @@
 package com.mycompany.model.vo;
 
 public class InfoProyectoVo {
-    private int id;
+    private int idProyecto;
     private String constructora;
-    private String numeroHabitaciones;
+    private int numeroHabitaciones;
     private String ciudad;
 
-    public int getId() {
-        return id;
+    public int getIdProyecto() {
+        return idProyecto;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setIdProyecto(int idProyecto) {
+        this.idProyecto = idProyecto;
     }
 
     public String getConstructora() {
@@ -22,11 +22,11 @@ public class InfoProyectoVo {
         this.constructora = constructora;
     }
 
-    public String getNumeroHabitaciones() {
+    public int getNumeroHabitaciones() {
         return numeroHabitaciones;
     }
 
-    public void setNumeroHabitaciones(String numeroHabitaciones) {
+    public void setNumeroHabitaciones(int numeroHabitaciones) {
         this.numeroHabitaciones = numeroHabitaciones;
     }
 

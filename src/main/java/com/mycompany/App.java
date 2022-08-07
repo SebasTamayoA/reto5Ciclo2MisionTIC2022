@@ -12,12 +12,10 @@ public class App {
             public void run() {
                 JFrame frame = new ReportesView();
                 frame.setDefaultCloseOperation(frame.EXIT_ON_CLOSE);
-                frame.setSize(850, 300);
+                frame.setSize(850, 200);
                 frame.setLocationRelativeTo(null);
                 frame.setVisible(true);
             }
         });
-
-
     }
 }
