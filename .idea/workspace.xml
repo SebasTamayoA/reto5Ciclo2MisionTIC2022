@@ -4,16 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="35245117-d651-4294-8c7f-b49b884e5ea7" name="Changes" comment="Actualizacion formulario de informes">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/view/Icon.png" afterDir="false" />
+    <list default="true" id="35245117-d651-4294-8c7f-b49b884e5ea7" name="Changes" comment="Actualizacion formulario de informes y clases Dao">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/model/dao/ComprasProyectoDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/model/dao/ComprasProyectoDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/model/dao/InfoLiderDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/model/dao/InfoLiderDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/model/dao/InfoProyectoDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/model/dao/InfoProyectoDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/model/vo/ComprasProyectoVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/model/vo/ComprasProyectoVo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/model/vo/InfoProyectoVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/model/vo/InfoProyectoVo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/view/ReportesView.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/view/ReportesView.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/view/ReportesView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/view/ReportesView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,22 +34,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;UI_DESIGNER_EDITOR_MODE.PaletteManager.SHOW&quot;: &quot;true&quot;,
-    &quot;UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH&quot;: &quot;158&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "UI_DESIGNER_EDITOR_MODE.PaletteManager.SHOW": "true",
+    "UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH": "158",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.grazie"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Users\sebas\Documents\Education\MisionTic2022\Ciclo2\Programacion\Retos\Reto5\reto5\src\main\java\com\mycompany\view" />
@@ -152,7 +144,8 @@
       <workItem from="1659652698313" duration="16892000" />
       <workItem from="1659717768944" duration="8067000" />
       <workItem from="1659825788676" duration="2174000" />
-      <workItem from="1659899862756" duration="4033000" />
+      <workItem from="1659899862756" duration="5571000" />
+      <workItem from="1659909597979" duration="1930000" />
     </task>
     <task id="LOCAL-00001" summary="PlantillaDeinicio">
       <created>1659634797448</created>
@@ -203,7 +196,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659670514202</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Actualizacion formulario de informes y clases Dao">
+      <created>1659904195568</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1659904195568</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -231,6 +231,7 @@
     <MESSAGE value="Actualizacion formulario con informe 3" />
     <MESSAGE value="Actualizacion formulario con informe 2" />
     <MESSAGE value="Actualizacion formulario de informes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Actualizacion formulario de informes" />
+    <MESSAGE value="Actualizacion formulario de informes y clases Dao" />
+    <option name="LAST_COMMIT_MESSAGE" value="Actualizacion formulario de informes y clases Dao" />
   </component>
 </project>
